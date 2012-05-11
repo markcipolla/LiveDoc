@@ -13,6 +13,7 @@ var LiveDoc = (function () {
         
         $('body').append("<div id='livedoc' style='display: none'></div>");
         $("#livedoc").append("<h1>LiveDoc</h1><div id='livedoc_results'></div>");
+        $("#livedoc").height(document.documentElement.scrollHeight);
 
         $("#livedoc").click(function() {
           $('body').toggleClass("livedoc_opened");
