@@ -24,7 +24,6 @@ body.livedoc_opened {
 #livedoc h1 {
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0.15em;
   color: white;
   background-color: #333;
   display: block;
