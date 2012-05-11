@@ -44,6 +44,8 @@ sure it's clean.
 
 Then, in your search results page, just before the footer, add:
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="/livedoc_styles.css">
     <script src="/livedoc.js" type="text/javascript"></script>
     <script>
       $(document).ready(function () {
