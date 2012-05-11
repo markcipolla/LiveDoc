@@ -1,0 +1,62 @@
+body.livedoc_opened {
+  margin-left: 300px;
+}
+
+#livedoc {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#livedoc.opened {
+  width: 300px;
+}
+
+#livedoc.opened h1 {
+  display: none;
+}
+
+#livedoc h1 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: white;
+  background-color: #333;
+  display: block;
+  position: absolute;
+  left: -33px;
+  top: 35px;
+  padding: 5px 10px;
+
+  -webkit-transform: rotate(90deg); 
+     -moz-transform: rotate(90deg); 
+      -ms-transform: rotate(90deg); 
+       -o-transform: rotate(90deg); 
+          transform: rotate(90deg);
+             filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+                     M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17, sizingMethod='auto expand');
+               zoom: 1;
+}
+
+#livedoc.opened #livedoc_results {
+  display: block;
+}
+
+#livedoc_results {
+  display: none;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.livedoc_result {
+  padding: 20px;
+  border-bottom: 1px solid #666;
+  color: white;
+}

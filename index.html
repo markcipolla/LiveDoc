@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>LiveDoc</title>
+    <meta charset="utf-8" />
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="livedoc_styles.css">
+    <script src="livedoc.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function () {
+        LiveDoc.init("@search_results", "cuke.json");
+
+        $("#livedoc").click(function() {
+          $('body').toggleClass("livedoc_opened");
+          $(this).toggleClass("opened");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div style="width: 900px; margin: 0 auto;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dui venenatis nisi commodo facilisis nec sit amet lacus. Sed quam sapien, ultrices scelerisque rutrum non, ornare eu enim. Aenean et leo risus, at consequat augue. Nunc et nulla vel lorem semper tincidunt quis ac ligula. Nullam placerat nunc ac libero porttitor congue. Nam iaculis risus volutpat tortor imperdiet fringilla. Suspendisse potenti. In hac habitasse platea dictumst. Proin ornare bibendum lectus. Donec elementum, urna nec dignissim luctus, diam lorem tincidunt nunc, a venenatis lectus eros a justo.</p>
+
+      <p>Pellentesque placerat pharetra tellus, at tempus eros tempor sed. Praesent eu erat tellus, in egestas lacus. Morbi tincidunt aliquam odio sed laoreet. Cras non justo nisl, a vulputate lorem. Proin varius pretium dignissim. Cras vehicula nisi vel odio dignissim tristique. Duis venenatis nunc non lorem varius at egestas massa malesuada. Nunc nunc sapien, malesuada ac semper in, feugiat ut quam. Vivamus sit amet nibh ligula, sit amet pellentesque augue. Vivamus tempor feugiat scelerisque. Aliquam sagittis cursus nisi, non luctus libero volutpat sed.</p>
+
+      <p>Praesent ut lorem at lorem vehicula blandit sed ac urna. Aenean viverra, erat sed gravida rhoncus, erat quam faucibus nunc, ornare consequat leo ante rhoncus lacus. Nunc fringilla sollicitudin commodo. Nullam a velit ligula, non pretium augue. Nulla at sem velit, vel posuere tellus. In pretium, nulla non convallis venenatis, lacus nibh sodales augue, eget tincidunt tortor massa eu justo. Mauris eu urna urna. Curabitur scelerisque eros sed enim fermentum non pretium metus euismod. Aliquam et tellus id purus blandit elementum et et lorem. Vestibulum placerat, libero nec ultrices vehicula, eros turpis volutpat nunc, id consectetur mauris sem id nibh. Mauris auctor semper orci at viverra. Suspendisse sed ligula in leo laoreet suscipit vitae at massa.</p>
+
+      <p>Nunc lacinia, massa nec fringilla dictum, augue lorem mattis enim, in ultrices nibh felis eget mi. Sed in odio massa, id ultricies odio. Suspendisse laoreet interdum semper. Aenean vehicula nibh ac sem pulvinar sit amet vulputate nulla feugiat. Quisque ac elit at ligula luctus malesuada quis nec libero. Praesent faucibus adipiscing enim sit amet venenatis. Ut sit amet est ante, adipiscing condimentum turpis. Nullam volutpat vehicula vehicula. Maecenas facilisis ante eget augue feugiat accumsan. Cras enim diam, tempor quis interdum vel, tristique volutpat risus.</p>
+
+      <p>Suspendisse quis ornare nisi. Donec id enim ut mauris feugiat dignissim ac vitae ligula. Nulla lectus purus, gravida a volutpat dignissim, tristique eget risus. Nam sit amet quam nulla. Mauris interdum pellentesque tellus, eu lobortis tortor tincidunt nec. Morbi non leo sapien, nec suscipit mi. Aliquam faucibus lacus non ligula consequat id fringilla turpis commodo. Donec ultricies aliquet luctus. Ut vehicula, nibh sit amet auctor rhoncus, magna nisi condimentum augue, eget pretium arcu nunc imperdiet justo. Morbi sapien massa, semper sit amet consequat eu, ornare eu risus. Proin vitae aliquet sem.</p>
+    </div>
+  </body>
+</html>

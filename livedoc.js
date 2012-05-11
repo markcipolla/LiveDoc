@@ -11,12 +11,15 @@ var LiveDoc = (function () {
     var init = function(tags, cucumber_json_url) {
         var tags = "@search_results";
         
-        $('body').append("<div id='jenkins_results'></div>");
+
+
+        $('body').append("<div id='livedoc'></div>");
+        $("#livedoc").append("<h1>LiveDoc</h1><div id='livedoc_results'></div>");
+
+
         $.get(cucumber_json_url, function(data){
 
             var features = data["features"];
-            $("#jenkins_results").append("<ul></ul>");
-
             // Loop through the features
             for (i = 0; i < features.length; i++) {
 
@@ -29,8 +32,8 @@ var LiveDoc = (function () {
 
                 if( $.inArray(tags, feature_tags) != -1 ) {
 
-                    $("#jenkins_results ul").append("<li class='feature_" + i + "'></li>");
-                    $("#jenkins_results ul li.feature_" + i).html(feature["keyword"] + " - " + feature["name"]);
+                    $("#livedoc_results").append("<div class='livedoc_result'></div>");
+                    $("#livedoc_results .livedoc_result").last().html("<h4>" + feature["keyword"] + " - " + feature["name"]) + "</h4>";
 
                     if ( feature["elements"]) {
                       for (j = 0; j < feature["elements"].length; j++) {
