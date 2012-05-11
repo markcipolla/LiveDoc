@@ -1,7 +1,7 @@
 // LiveDoc - Check specific page level tags to generate in-page, live documentation.
 // by Mark Cipolla, http://www.markcipolla.com
 
-// Version 0.0.2
+// Version 0.1.0
 // Full source at https://github.com/markcipolla/LiveDoc
 // Copyright (c) 2012 Mark Cipolla
 

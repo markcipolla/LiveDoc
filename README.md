@@ -2,7 +2,7 @@ LiveDoc
 =======
 
 Checks specific page level tags from a Cucumber report to generate in-page, live documentation.
-Still a proof of concept more than anything else. No error handling, lots of console.logs...
+Still a proof of concept, but seems to handle a fair bit of the stuff cucumber throws at it.
 
 ### Background
 We were dealing with large specification documents that, though intentioned well, and used to 
