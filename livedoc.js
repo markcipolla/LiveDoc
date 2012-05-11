@@ -9,7 +9,7 @@
 var LiveDoc = (function () {
 
     var init = function(tags, cucumber_json_url) {
-        var tags = "@search_results";
+        var tags = tags;
         
         $('body').append("<div id='livedoc' style='display: none'></div>");
         $("#livedoc").append("<h1>LiveDoc</h1><div id='livedoc_results'></div>");
