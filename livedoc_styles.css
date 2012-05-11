@@ -63,7 +63,7 @@ body.livedoc_opened {
 .livedoc_result dl {
   padding: 10px 0 0;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 11px;
   border-top: 1px solid #555;
 }
 
@@ -78,14 +78,9 @@ body.livedoc_opened {
 }
 
 .livedoc_result dd ul {
-  padding: 0 0 10px 10px;
+  padding: 0 0 0 5px;
   list-style: none;
   line-height: 1.2em;
-}
-
-
-.livedoc_result dd ul li {
-
 }
 
 .livedoc_result dd ul li.passed {
