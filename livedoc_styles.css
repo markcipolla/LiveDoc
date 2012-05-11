@@ -18,7 +18,7 @@ body.livedoc_opened {
 }
 
 #livedoc.opened h1 {
-  display: none;
+  left: 276px;
 }
 
 #livedoc h1 {
