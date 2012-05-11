@@ -1,11 +1,11 @@
 // LiveDoc - Check specific page level tags to generate in-page, live documentation.
 // by Mark Cipolla, http://www.markcipolla.com
-//
+
 // Version 0.0.1
 // Full source at https://github.com/markcipolla/LiveDoc
 // Copyright (c) 2012 Mark Cipolla
 
-// ----------------------------------------------------------------------------------
+// MIT License, https://github.com/markcipolla/LiveDoc/blob/master/LICENSE.md
 var LiveDoc = (function () {
 
     var init = function(tags, cucumber_json_url) {
