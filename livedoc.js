@@ -11,11 +11,13 @@ var LiveDoc = (function () {
     var init = function(tags, cucumber_json_url) {
         var tags = "@search_results";
         
-
-
         $('body').append("<div id='livedoc'></div>");
         $("#livedoc").append("<h1>LiveDoc</h1><div id='livedoc_results'></div>");
 
+        $("#livedoc").click(function() {
+          $('body').toggleClass("livedoc_opened");
+          $(this).toggleClass("opened");
+        });
 
         $.get(cucumber_json_url, function(data){
 
