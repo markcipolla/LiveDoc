@@ -33,14 +33,11 @@ cool if they're all pending. In our case, we've tagged them @search_results:
 
 Now, when you run your cucumber tests, use
 
-    cucumber --format json > public/cuke.json
+    bundle exec cucumber --format json -o public/cuke.json
 
 Change the public/cuke.json to something that suits you. We're building a rails app, and public
 is the start of a root public folder, so it's easy to get to the json file from a js call by putting
 it in there.
-
-Sometimes Cucumber jams some junk at the start of the json file... Maybe check that and make
-sure it's clean.
 
 Then, in your search results page, just before the footer, add:
 
