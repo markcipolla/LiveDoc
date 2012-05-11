@@ -87,6 +87,10 @@ body.livedoc_opened {
   color: green;
 }
 
+.livedoc_result dd ul li.pending {
+  color: #FFFF99;
+}
+
 .livedoc_result dd ul li.failed {
   color: #FF3333;
 }

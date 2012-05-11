@@ -32,7 +32,6 @@ var LiveDoc = (function () {
                 });
 
                 if( $.inArray(tags, feature_tags) != -1 ) {
-
                     $("#livedoc_results").append("<div class='livedoc_result'></div>");
                     var result = $("#livedoc_results .livedoc_result").last();
                     result.html("<h4>" + feature["keyword"] + " - " + feature["name"]) + "</h4>";
