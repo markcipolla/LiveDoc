@@ -26,7 +26,7 @@ cool if they're all pending. In our case, we've tagged them @search_results:
     @search_results
     Feature: Search Results
 
-    @wip @search_results
+    @search_results
     Scenario: I can see the search results
       Given I am on the search results page
       Then I should see some results
