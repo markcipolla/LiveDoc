@@ -1,7 +1,7 @@
 // LiveDoc - Check specific page level tags to generate in-page, live documentation.
 // by Mark Cipolla, http://www.markcipolla.com
 
-// Version 0.1.0
+// Version 0.1.1
 // Full source at https://github.com/markcipolla/LiveDoc
 // Copyright (c) 2012 Mark Cipolla
 
@@ -46,7 +46,6 @@ var LiveDoc = (function () {
                         for (j = 0; j < feature["elements"].length; j++) {
                             // Get the Scenario
                             var scenario = feature["elements"][j];
-                            console.log(scenario);
 
                             var scenario_tags = $.map( scenario["tags"], function(val, i) {
                                 return val.name;
